@@ -16,6 +16,8 @@ private:
 public:
 	Student(std::string ln, std::string major) :lastName(ln), major(major) {
 		lastName = ln;
+		//keyword this refers to the object that invoked the function.
+		//in this case, the object that is currently being created and initialized
 		this->major = major;
 		setId();
 	}
